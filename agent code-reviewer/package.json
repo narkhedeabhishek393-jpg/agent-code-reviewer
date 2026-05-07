@@ -1,0 +1,36 @@
+{
+  "name": "agentic-code-reviewer",
+  "version": "1.0.0",
+  "description": "Production-grade AI agent for intelligent code review with architectural analysis",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "review": "ts-node src/cli.ts",
+    "test": "vitest"
+  },
+  "keywords": [
+    "ai-agent",
+    "code-review",
+    "architecture",
+    "gemini-api",
+    "agentic-ai"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/generative-ai": "^0.3.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3",
+    "dotenv": "^16.3.1",
+    "glob": "^10.3.10",
+    "ast-parser": "^0.1.10"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/glob": "^8.1.0",
+    "vitest": "^1.1.0"
+  }
+}
